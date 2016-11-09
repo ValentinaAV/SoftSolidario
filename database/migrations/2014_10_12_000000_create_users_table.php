@@ -24,7 +24,7 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
         $pass=bcrypt('quindio@gmail.com');
-        DB::statement("INSERT INTO `users` (`name`,`email`,`password`,`imagen`,`rol`) VALUES ('ROOT','quindio@gmail.com','$pass','hulk.png','QUINDIO SOLIDARIO')");
+        DB::statement("INSERT INTO 'users' ('name','email','password','imagen','rol') VALUES ('ROOT','quindio@gmail.com','$pass','hulk.png','QUINDIO SOLIDARIO')");
     }
 
     /**
