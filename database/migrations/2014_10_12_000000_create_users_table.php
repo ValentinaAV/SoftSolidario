@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->char('password',60);
             $table->string('imagen')->nullable();
-            $table->enum('rol', ['QUINDIO SOLIDARIO','COODEQ','COFINCAFÉ','FEIBG','FEUQ','AVANZA','AUXILIAR'])->default('AUXILIAR');
+            $table->enum('rol', ['QUINDIO SOLIDARIO','COODEQ','COFINCAFÉ','FEIBG','FEUQ','AVANZA','AUXILIAR'])->default('QUINDIO SOLIDARIO');
             $table->rememberToken();
             $table->timestamps();
         });
